@@ -1,4 +1,4 @@
-<<?php
+<?php
         echo '<h1>All about string functions</h1>';
 
 	echo '<h2>checking for string input</h2>';
@@ -76,6 +76,7 @@
 	echo (int)'feet' . '<br>';
 
 	
+
 
 
 
