@@ -15,14 +15,14 @@
 	$name='Albert Einstein';
 	$length=strlen($name);
 
-	echo $length"<br>";
+	echo $length . "<br>";
 	echo "First Name: " . substr($name, 0, 6) . "<br>";
 	echo "Last Name: " . substr($name, -8, 8) . "<br>";
 
 	echo '<h2>Searching for string</h2>';
 	
 	$info="I work and study, Study and Work<br>";
-	echo strpos($info, 'work') . '<br>';
+	echo strpos($info, 'work') . "<br>";
 	echo strpos($info, 'study') . '<br>';
 	echo stripos($info, 'study') . '<br>';
 	echo strripos($info, 'work') . '<br>';
