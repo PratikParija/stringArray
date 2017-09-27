@@ -21,12 +21,20 @@
 
 	echo '<h2>Searching for string</h2>';
 	
-	$info="I am work and study<br>";
+	$info="I work and study, Study and Work<br>";
 	echo strpos($info, 'work') . '<br>';
 	echo strpos($info, 'study') . '<br>';
+	echo stripos($info, 'study') . '<br>';
+	echo strripos($info, 'work') . '<br>';
+	echo strpos($info, 'Work') . '<br>';
 
-	echo '<h2>Modifying strings</h2>
+	echo '<h2>Replacing strings</h2>'
 	
+	$phone='201.988.2686<br>';
+	$msg='Hello Moto!<br>';
+	echo str_replace('.', '-', $phone);
+	echo str_ireplace('moto', 'World', $msg);
+
 	
 
 
