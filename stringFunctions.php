@@ -39,15 +39,25 @@
 	echo '<h2>Functions for modifying strings</h2>';
 
 	//$word='Hello World';
-	echo $trim('  Hello  ');
-	echo $lcfirst('Hello World');
-	echo $ucfirst('hello world');
-	echo $strtoupper('hello world');
-	echo $strtolower('HELLO WORLD');
+	echo trim('  Hello  ') . '<br>';
+	echo lcfirst('Hello') . '<br>';
+	echo ucfirst('hello world') . '<br>';
+	echo strtoupper('hello world') . '<br>';
+	echo strtolower('HELLO WORLD') . '<br>';
 
+	echo '<h2>Repeating string</h2>';
 
+	$emotion='Love';
+	echo str_repeat($emotion, 5);
 
+	echo '<h2>Functions for converting between character and integers<h2>';
+
+	$num=7;
+	echo chr($num) . '<br>';
 	
+	$c=P;
+	echo ord($c) . '<br>';
+
 
 
 ?>
