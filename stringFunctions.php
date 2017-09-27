@@ -70,11 +70,12 @@
 	echo '<h2>Functions for converting integers and strings</h2>';
 
 	echo (int)'7' . '<br>';
+	echo (int)'98.5' . '<br>';
+	echo (int)'80 miles' . '<br>';
+	echo (int)'5,523' . '<br>';
+	echo (int)'feet' . '<br>';
 
-
-
-
-
+	
 
 
 
