@@ -58,7 +58,7 @@
 	$c=P;
 	echo ord($c) . '<br>';
 	
-	echo '<h2>Functions for comparing strings</h2>'
+	echo '<h2>Functions for comparing strings</h2>';
 
 	echo strcmp("Hello", "hello") . '<br>';
 	echo strcmp("hello", "hello") . '<br>';
