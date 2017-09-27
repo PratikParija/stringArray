@@ -30,8 +30,8 @@
 
 	echo '<h2>Replacing strings</h2>'
 	
-	$phone='201.988.2686<br>';
-	$msg='Hello Moto!<br>';
+	$phone="201.988.2686<br>";
+	$msg="Hello Moto!<br>";
 	echo $msg;
 	echo str_replace('.', '-', $phone);
 	echo str_ireplace('moto', 'World', $msg);
