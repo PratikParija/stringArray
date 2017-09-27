@@ -32,8 +32,20 @@
 	
 	$phone='201.988.2686<br>';
 	$msg='Hello Moto!<br>';
+	echo $msg;
 	echo str_replace('.', '-', $phone);
 	echo str_ireplace('moto', 'World', $msg);
+	
+	echo '<h2>Functions for modifying strings</h2>';
+
+	//$word='Hello World';
+	echo $trim('  Hello  ');
+	echo $lcfirst('Hello World');
+	echo $ucfirst('hello world');
+	echo $strtoupper('hello world');
+	echo $strtolower('HELLO WORLD');
+
+
 
 	
 
