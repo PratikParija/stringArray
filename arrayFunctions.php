@@ -18,15 +18,21 @@
 	print_r($cars);
 	echo '<br>';
 
+	echo '<h2>Removing elements</h2>';
+
 	unset($cars[1]);
 	print_r($cars);
+	echo '<br>';
 	array_values($cars);
 	print_r($cars);
+	echo '<br>';
 
 	echo '<h2>Associative Array</h2>';
 	
 	$age=array('John'=>25, 'Aisha'=>27, 'Daybala'=>19);
 	echo $age['Aisha'] . '<br>';
+
+	echo "Youngest person: {$age['Daybala']}";
 	
 	echo '<h2>Multidimentionl</h2>';
 
@@ -49,7 +55,43 @@
 	print_r($values);
 	echo '<br>';
 
-	$employee=array();
-	$employee[0]='Anthony';
-	$employee['position']='manager';
+	$employees=array();
+	$employees[0]='Anthony';
+	$employees['position']='manager';
+
+	echo count($employees).'<br>';
+	unset ($employees);
+	print_r($employees);
+	echo '<br>';
+
+	$number=range(0,5);
+	print_r($number);
+	echo '<br>';
+	$number=range(0,5,2);
+	print_r($number);
+	echo '<br>';
+
+	$num=array_fill(0,5,1);
+	print_r($num);
+	echo '<br>';
+	$pad=array_pad($num,8,0);
+	print_r($pad);
+	echo '<br>';
+
+	echo '<h2>Merge Array</h2>';
+
+	$obj=range(0,3);
+	$obj1=range(4,6);
+	$merge=array_merge($obj, $obj1);
+	print_r($merge);
+	echo '<br>';
+
+	echo '<h2>Slice array</h2>';
+
+	$slice=array_slice($merge,2,3);
+	print_r($slice);
+	echo '<br>';
+	echo array_sum($slice) . '<br>';
+
+
 ?>
