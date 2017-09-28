@@ -13,8 +13,16 @@
 	$cars[1]='Porsche';
 	$cars[2]='McLaren';
 
-	echo $cars[1].'<br>';
+	echo $cars[2].'<br>';
+	
+	print_r($cars);
+	echo '<br>'
 
+	echo '<h2>Associative Array</h2>';
+	
+	$age=array('John'=>25, 'Aisha'=>27, 'Daybala'=>19);
+	echo $age['Aisha'] . '<br>';
 
+	
 
 ?>
