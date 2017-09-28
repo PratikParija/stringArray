@@ -18,6 +18,11 @@
 	print_r($cars);
 	echo '<br>';
 
+	unset($cars[1]);
+	print_r($cars);
+	array_values($cars);
+	print_r($cars);
+
 	echo '<h2>Associative Array</h2>';
 	
 	$age=array('John'=>25, 'Aisha'=>27, 'Daybala'=>19);
@@ -36,5 +41,15 @@
 	
 	echo '<h2>Mixed Arrays</h2>';
 
-	
+	$values=array(0, 0.0, false, 'haha', array('Porsche', 12, 8));
+
+	echo $values . '<br>';
+	var_dump($values);
+	echo '<br>';
+	print_r($values);
+	echo '<br>';
+
+	$employee=array();
+	$employee[0]='Anthony';
+	$employee['position']='manager';
 ?>
