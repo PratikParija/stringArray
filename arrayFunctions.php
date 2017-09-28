@@ -16,13 +16,25 @@
 	echo $cars[2].'<br>';
 	
 	print_r($cars);
-	echo '<br>'
+	echo '<br>';
 
 	echo '<h2>Associative Array</h2>';
 	
 	$age=array('John'=>25, 'Aisha'=>27, 'Daybala'=>19);
 	echo $age['Aisha'] . '<br>';
+	
+	echo '<h2>Multidimentionl</h2>';
+
+	$carInfo=array(
+	array('Ferrari', 16, 15),
+	array('McLaren', 8,12),
+	array(
+		array('mango', 10, 5)
+		),
+	);
+	echo $carInfo[2][0][0] . '<br>';
+	
+	echo '<h2>Mixed Arrays</h2>';
 
 	
-
 ?>
