@@ -95,22 +95,30 @@
 
 	echo '<h2>Sort Array</h2>';
 
-	$tax_rate=array('ny'=7.75, 'nj'=0.7, 'oregon'=0.0);
-	asort($tax_rate);
-	print_r($tax_rate);
+	$name=array('Mike','Anne','Ray');
+	sort($name);
+	print_r($name);
+	echo '<br>';
+	rsort($name);
+	print_r($name);
+	echo '<br>';
+	
+	/*$taxRates=array('ny'=7.75, 'nj'=0.7, 'oregon'=0.0);
+	asort($taxRates);
+	print_r($taxRates);
 	echo '<br>';
 
-	ksort($tax_rate);
-	print_r($tax_rate);
+	ksort($taxRates);
+	print_r($taxRates);
 	echo '<br>';
 
-	arsort($tax_rate);
-	print_r($tax_rate);
+	arsort($taxRates);
+	print_r($taxRates);
 	echo '<br>';
 
-	krsort($tax_rate);
+	krsort($taxRates);
 	print_r($krsort);
-	echo '<br>';
+	echo '<br>';*/
 
 
 ?>
