@@ -93,5 +93,24 @@
 	echo '<br>';
 	echo array_sum($slice) . '<br>';
 
+	echo '<h2>Sort Array</h2>';
+
+	$tax_rate=array('ny'=7.75, 'nj'=0.7, 'oregon'=0.0);
+	asort($tax_rate);
+	print_r($tax_rate);
+	echo '<br>';
+
+	ksort($tax_rate);
+	print_r($tax_rate);
+	echo '<br>';
+
+	arsort($tax_rate);
+	print_r($tax_rate);
+	echo '<br>';
+
+	krsort($tax_rate);
+	print_r($krsort);
+	echo '<br>';
+
 
 ?>
